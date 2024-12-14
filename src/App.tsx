@@ -11,6 +11,8 @@ function App(){
   const handleSelectItem = (item: string) => {
     console.log(item)
   }
-  return <div><Button onClick={()=> console.log('clicked')} children=""></Button></div>
+  return <div><Button onClick={()=> console.log('clicked')} children=""></Button>
+  <ListGroup items={items} heading="cities" onSelectItem={handleSelectItem}></ListGroup>
+  </div>
 }
 export default App
